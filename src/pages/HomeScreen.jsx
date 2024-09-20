@@ -4,8 +4,8 @@ function HomeScreen() {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-5xl font-bold text-gray-800 mb-4 drop-shadow-md">
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 max-[746px]:text-center px-4">
+      <h1 className="text-5xl max-[529px]:text-4xl font-bold text-gray-800 mb-4 drop-shadow-md">
         Welcome to the Skill Quiz App
       </h1>
       <p className="text-lg text-gray-600 mb-8 text-center max-w-lg">

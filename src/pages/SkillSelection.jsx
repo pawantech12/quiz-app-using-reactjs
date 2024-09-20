@@ -35,7 +35,7 @@ function SkillSelection() {
   if (loading) return <Loader />;
 
   return (
-    <div className="p-10 bg-gray-100 min-h-screen flex flex-col items-center">
+    <div className="py-10 bg-gray-100 min-h-screen flex flex-col items-center">
       <h2 className="text-4xl font-bold text-center text-gray-800 drop-shadow-md">
         Select a Skill
       </h2>
@@ -43,7 +43,7 @@ function SkillSelection() {
         {categories.map((category) => (
           <div
             key={category.name}
-            className="p-6 bg-white rounded-lg shadow-lg hover:border-orange-500 border hover:bg-orange-100 transform transition-transform duration-300 hover:scale-105 cursor-pointer flex flex-col items-center justify-center"
+            className="p-6 bg-white rounded-lg shadow-lg hover:border-orange-500 border hover:bg-orange-100 transform transition-transform duration-300 hover:scale-105 cursor-pointer flex flex-col items-center justify-center max-sm:w-[300px]"
             onClick={() => navigate(`/quiz/${category.name.toLowerCase()}`)}
           >
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">
